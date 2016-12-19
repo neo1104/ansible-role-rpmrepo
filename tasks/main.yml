@@ -1,0 +1,6 @@
+---
+# tasks file for roles/rpmrepo
+- name: include install.yml
+  include: install.yml
+- name: include configure.yml
+  include: configure.yml

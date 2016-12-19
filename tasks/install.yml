@@ -1,0 +1,5 @@
+---
+- name: install createrepo tool
+  yum:
+    name: createrepo
+    state: present

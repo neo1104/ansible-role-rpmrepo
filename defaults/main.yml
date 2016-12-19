@@ -1,0 +1,8 @@
+---
+# defaults file for roles/rpmrepo
+
+repo_dir:
+  - /var/yum_data/centos/6/x86
+  - /var/yum_data/centos/6/x86_64
+
+repo_nginx_server: http://127.0.0.1
