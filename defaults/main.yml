@@ -5,4 +5,6 @@ repo_dir:
   - /var/37dz-repo/centos/6/primary/x86
   - /var/37dz-repo/centos/6/primary/x86_64
 
-repo_nginx_server: http://127.0.0.1/centos/$releasever/primary/$basearch
+repo_web_host: 192.168.35.10
+repo_nginx_server: http://{{ repo_web_host }}/centos/$releasever/primary/$basearch
+repo_install_type: server

@@ -3,3 +3,18 @@
   yum:
     name: createrepo
     state: present
+
+- name: make repo dir
+  file:
+    path: "{{ item }}"
+    owner: root
+    group: root
+    mode: 0655
+    state: directory
+  with_items: "{{ repo_dir }}"
+
+- name: format repo dir
+  shell: createrepo -pdo "{{ item }}" "{{ item }}"
+  args:
+    creates: "{{ item }}/repodata"
+  with_items: "{{ repo_dir }}"
