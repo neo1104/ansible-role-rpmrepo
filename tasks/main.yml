@@ -6,5 +6,3 @@
 
 - name: include configure.yml
   include: configure.yml
-  tags:
-  - configure
