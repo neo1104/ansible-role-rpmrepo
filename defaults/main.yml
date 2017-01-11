@@ -4,8 +4,8 @@
 repo_path: /var/rpmrepo
 
 repo_dir:
-  - {{ repo_path }}/centos/6/primary/x86
-  - {{ repo_path }}/centos/6/primary/x86_64
+  - "{{ repo_path }}/centos/6/primary/x86"
+  - "{{ repo_path }}/centos/6/primary/x86_64"
 
 repo_web_host: 192.168.35.10
 repo_nginx_server: http://{{ repo_web_host }}/centos/$releasever/primary/$basearch
